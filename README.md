@@ -14,3 +14,17 @@
 - **Відправка**: Дані кодуються в JSON → потім у Base64 → і надсилаються POST-запитом на `https://jsonplaceholder.typicode.com/posts`.
 - **Захист даних**: JSON кодується у Base64, щоб забезпечити базовий захист від перехоплення "as-is".
 - **Обробка помилок**: Усі відповіді логуються. У разі помилки — виводиться опис та статус-код.
+
+---
+
+## 📦 Структура модуля
+```bash
+├── BatteryMonitor
+    ├── Models
+    │   └── BatteryStatus.swift
+    ├── Services
+    │   ├── BatteryMonitoringService.swift
+    │   └── NetworkService.swift
+    └── ViewModels
+        └── BatteryMonitorViewModel.swift
+```
