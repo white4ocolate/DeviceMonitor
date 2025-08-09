@@ -21,7 +21,7 @@ final class BatteryMonitoringService {
     
     func start() {
         beginBackgroundTask()
-        timer = Timer.scheduledTimer(withTimeInterval: 10, repeats: true) { _ in
+        timer = Timer.scheduledTimer(withTimeInterval: 120, repeats: true) { _ in
             self.sendBatteryStatus()
         }
         RunLoop.main.add(timer!, forMode: .common)

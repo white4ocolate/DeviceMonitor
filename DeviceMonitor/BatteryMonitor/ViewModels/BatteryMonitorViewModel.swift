@@ -7,12 +7,15 @@
 
 import Foundation
 
-final class BatteryMonitorViewModel: ObservableObject {
-    func startMonitoring() {
+@available(iOS 13.0, *)
+public final class BatteryMonitorViewModel: ObservableObject {
+    public init() {}
+    
+    public func startMonitoring() {
         BatteryMonitoringService.shared.start()
     }
     
-    func stopMonitoring() {
+    public func stopMonitoring() {
         BatteryMonitoringService.shared.stop()
     }
 }
