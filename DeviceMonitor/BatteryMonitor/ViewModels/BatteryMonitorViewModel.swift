@@ -7,8 +7,7 @@
 
 import Foundation
 
-@available(iOS 13.0, *)
-public final class BatteryMonitorViewModel: ObservableObject {
+final class BatteryMonitorViewModel: ObservableObject {
     public init() {}
     
     public func startMonitoring() {
